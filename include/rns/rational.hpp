@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 class Rational 
 {    
@@ -22,3 +23,7 @@ public:
 };
 
 Rational gcd_formula(const Rational& a, const Rational& b);
+
+//Разложение рационального числа в конечную цепную дробь
+// Возвращает вектор коэффициентов [a_0, a_1, ..., a_k]
+std::vector<long int> toContinuedFraction(const Rational& r);
